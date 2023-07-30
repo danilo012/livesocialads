@@ -209,7 +209,7 @@ class Feed extends React.Component {
 
     if (id === "clearOld") this.setState({ clearOld: e.target.checked });
 
-    if (id === "stopUpload") this.setState({ stopUpload: e.target.checked });
+   
   }
 
   fixedScrollHandler(e) {

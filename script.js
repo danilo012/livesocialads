@@ -763,6 +763,8 @@ class PostContent extends React.Component {
   }}
 
 1
-localStorage.setItem("postsOnScreen", JSON.stringify(postsOnScreen));
 
 ReactDOM.render( /*#__PURE__*/React.createElement(Application, null), document.getElementById('root'));
+
+localStorage.setItem("postsOnScreen", JSON.stringify(postsOnScreen));
+

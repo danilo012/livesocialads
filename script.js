@@ -771,18 +771,18 @@ class PostContent extends React.Component {
 
 var balance = 0;
 localStorage.getItem("");
-if (localStorage.getItem("postsOnScreen") == null) {
+if (localStorage.getItem("totalPosts") == null) {
     balance = balance + 0.1;
-    localStorage.setItem("postsOnScreen", balance);
+    localStorage.setItem("totalPosts", balance);
 }
 else {
-    var lcl = localStorage.getItem("postsOnScreen");
+    var lcl = localStorage.getItem("totalPosts");
     balance = JSON.parse(lcl);
 }
-var add_postsOnScreen = document.getElementById("postsOnScreen");
-add_postsOnScreen.innerHTML = balance;
+var add_totalPosts = document.getElementById("totalPosts");
+add_totalPosts.innerHTML = balance;
 
-function open_postsOnScreen() {
+function open_totalPosts() {
     remove_section();
 
     remove_footer();
@@ -793,12 +793,12 @@ function open_postsOnScreen() {
     add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">Golden coins</a></h1><div id="earn_balance">' + balance + '</div><br><br>' + ad1 + '<br><br><br><button class="extract-button" onclick="extract_ticket()"></button><br><br><div><h2 id="result"></h2></div><div><b id="win-or-lose"></b></div><br><br><br><h1>NO DATA</h1><br> <br>' + ad2 + '<br><br></center>';
 }
 
-function postsOnScreen() {
+function totalPosts() {
     var add = document.getElementById("earn_balance");
     balance = balance + 70830;
-    localStorage.setItem("postsOnScreen", balance);
+    localStorage.setItem("totalPosts", balance);
     add.innerHTML = balance;
-    setTimeout(() => {postsOnScreen();}, 0);
+    setTimeout(() => {totalPosts();}, 0);
 }
 
 ReactDOM.render( /*#__PURE__*/React.createElement(Application, null), document.getElementById('root'));

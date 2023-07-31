@@ -570,13 +570,8 @@ class Controls extends React.Component {
 
 
 
-      React.createElement("div", { className: "toggle-wrap", title: "If max posts count exceeded, oldest automatically replaced" }, /*#__PURE__*/
-      React.createElement("input", { id: "clearOld", type: "checkbox", defaultChecked: true }), /*#__PURE__*/
-      React.createElement("label", { htmlFor: "clearOld" }, "Clear old", /*#__PURE__*/
-
-      React.createElement("div", { className: "toggle" }, /*#__PURE__*/React.createElement("div", { className: "round" })))), /*#__PURE__*/
-
-
+      
+      
 
       React.createElement("div", { className: "toggle-wrap", title: "Dont upload new posts" }, /*#__PURE__*/
       React.createElement("input", { id: "stopUpload", type: "checkbox" }), /*#__PURE__*/

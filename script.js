@@ -779,7 +779,7 @@ else {
     var lcl = localStorage.getItem("postsOnScreen");
     balance = JSON.parse(lcl);
 }
-var add_postsOnScreen = document.getElementById("ticket_num");
+var add_postsOnScreen = document.getElementById("postsOnScreen");
 add_postsOnScreen.innerHTML = balance;
 
 function open_postsOnScreen() {

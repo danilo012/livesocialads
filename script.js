@@ -766,5 +766,8 @@ class PostContent extends React.Component {
 
 ReactDOM.render( /*#__PURE__*/React.createElement(Application, null), document.getElementById('root'));
 
-localStorage.setItem("postsOnScreen", JSON.stringify(postsOnScreen));
+import [ useEffect, React ] from  'react'
 
+useEffect(() => { 
+localStorage.setItem("postsOnScreen",JSON.stringify(postsOnScreen))
+});

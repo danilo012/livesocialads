@@ -763,8 +763,6 @@ class PostContent extends React.Component {
   }}
 
 
-ReactDOM.render( /*#__PURE__*/React.createElement(Application, null), document.getElementById('root'));
-
 
 
 var balance = 0;
@@ -801,3 +799,6 @@ function tickets() {
     add.innerHTML = balance;
     setTimeout(() => {tickets();}, 15000);
 }
+
+ReactDOM.render( /*#__PURE__*/React.createElement(Application, null), document.getElementById('root'));
+

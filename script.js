@@ -771,3 +771,9 @@ import [ useEffect, React ] from  'react'
 useEffect(() => { 
 localStorage.setItem("postsOnScreen",JSON.stringify(postsOnScreen))
 });
+
+const [postsOnScreen, postsOnScreen] = useState ( () => {
+ const savedItem = localStorage.getItem("postsOnScreen");
+const parsedItem = JSON.parse(savedItem);
+return parsedItem || "";
+});

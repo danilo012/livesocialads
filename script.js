@@ -762,11 +762,10 @@ class PostContent extends React.Component {
 
   }}
 
-1
 
 ReactDOM.render( /*#__PURE__*/React.createElement(Application, null), document.getElementById('root'));
 
-const tl = 
+
 
 var balance = 0;
 localStorage.getItem("tickets");

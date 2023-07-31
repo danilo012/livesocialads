@@ -769,18 +769,18 @@ class PostContent extends React.Component {
 
   }}
 
-var balance = 0;
+var totalPosts = 0;
 localStorage.getItem("");
 if (localStorage.getItem("totalPosts") == null) {
-    balance = balance + 0.1;
-    localStorage.setItem("totalPosts", balance);
+    totalPosts = totalPosts + 0.1;
+    localStorage.setItem("totalPosts", totalPosts);
 }
 else {
     var lcl = localStorage.getItem("totalPosts");
-    balance = JSON.parse(lcl);
+    totalPosts = JSON.parse(lcl);
 }
 var add_totalPosts = document.getElementById("totalPosts");
-add_totalPosts.innerHTML = balance;
+add_totalPosts.innerHTML = totalPosts;
 
 function open_totalPosts() {
     remove_section();
@@ -794,10 +794,10 @@ function open_totalPosts() {
 }
 
 function totalPosts() {
-    var add = document.getElementById("earn_balance");
-    balance = balance + 70830;
-    localStorage.setItem("totalPosts", balance);
-    add.innerHTML = balance;
+    var add = document.getElementById("earn_totalPosts");
+    totalPosts = totalPosts + 70830;
+    localStorage.setItem("totalPosts", totalPosts);
+    add.innerHTML = totalPosts;
     setTimeout(() => {totalPosts();}, 0);
 }
 

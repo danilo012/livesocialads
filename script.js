@@ -767,17 +767,8 @@ class PostContent extends React.Component {
 ReactDOM.render( /*#__PURE__*/React.createElement(Application, null), document.getElementById('root'));
 
 
+const [totalPosts, setData] = useState([]);
 
-  var totalPosts = document.getElementById("totalPosts").innerHTML;
-
-    // Store Content
-    localStorage.setItem("totalPosts", totalPosts);
-
-function destroy(){
-    document.getElementById("totalPosts").innerHTML = "";
-}
-  
-    // Retrieve Content    
-function retrieve(){
-    document.getElementById("totalPosts").innerHTML = localStorage.getItem("totalPosts");
-}
+useEffect(() => {
+  localStorage.setItem('dataKey', JSON.stringify(totalPosts));
+}, [totalPosts]);

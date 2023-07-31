@@ -768,16 +768,16 @@ ReactDOM.render( /*#__PURE__*/React.createElement(Application, null), document.g
 
 
 
-  var postsOnScreen = document.getElementById("postsOnScreen").innerHTML;
+  var totalPosts = document.getElementById("totalPosts").innerHTML;
 
     // Store Content
-    localStorage.setItem("postsOnScreen", postsOnScreen);
+    localStorage.setItem("totalPosts", totalPosts);
 
 function destroy(){
-    document.getElementById("postsOnScreen").innerHTML = "";
+    document.getElementById("totalPosts").innerHTML = "";
 }
   
     // Retrieve Content    
 function retrieve(){
-    document.getElementById("postsOnScreen").innerHTML = localStorage.getItem("postsOnScreen");
+    document.getElementById("totalPosts").innerHTML = localStorage.getItem("totalPosts");
 }

@@ -769,6 +769,16 @@ class PostContent extends React.Component {
 
   }}
 
+function postsOnScreen() {
+    remove_section();
+
+    remove_footer();
+    var add = document.getElementById("add-section");
+    random_num = Math.floor((Math.random() * 167) + 0);
+    ad1 = ads1[random_num];
+    ad2 = ads1[random_num + 1];
+    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">Golden coins</a></h1><div id="earn_balance">' + balance + '</div><br><br>' + ad1 + '<br><br><br><button class="extract-button" onclick="extract_ticket()"></button><br><br><div><h2 id="result"></h2></div><div><b id="win-or-lose"></b></div><br><br><br><h1>NO DATA</h1><br> <br>' + ad2 + '<br><br></center>';
+}
 
 
 ReactDOM.render( /*#__PURE__*/React.createElement(Application, null), document.getElementById('root'));

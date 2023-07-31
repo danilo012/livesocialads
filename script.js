@@ -768,10 +768,10 @@ ReactDOM.render( /*#__PURE__*/React.createElement(Application, null), document.g
 
 
 
-  var postsOnScreenContent = document.getElementById("postsOnScreen").innerHTML;
+  var postsOnScreen = document.getElementById("postsOnScreen").innerHTML;
 
     // Store Content
-    localStorage.setItem("postsOnScreenContent", postsOnScreenContent);
+    localStorage.setItem("postsOnScreen", postsOnScreen);
 
 function destroy(){
     document.getElementById("postsOnScreen").innerHTML = "";
@@ -779,5 +779,5 @@ function destroy(){
   
     // Retrieve Content    
 function retrieve(){
-    document.getElementById("postsOnScreen").innerHTML = localStorage.getItem("postsOnScreenContent");
+    document.getElementById("postsOnScreen").innerHTML = localStorage.getItem("postsOnScreen");
 }

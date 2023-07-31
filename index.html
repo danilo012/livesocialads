@@ -10,7 +10,11 @@
      crossorigin="anonymous"></script>
 </head>
 <body>
-  <div onclick="open_postsOnScreen()">postsOnScreen 🧽: <b id="postsOnScreen"></b></div>
+ <div id="postsOnScreen">
+  </div>
+
+<button id="del" onclick="destroy()">Destroy div  Content</button>
+<button id="res" onclick="retrieve()">Restore content  from local storage</button>
 <!-- partial:index.partial.html -->
 <div id="root"></div>
 <!-- partial -->

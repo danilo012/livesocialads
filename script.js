@@ -142,7 +142,7 @@ class Header extends React.Component {
       React.createElement("div", { className: "content-wrapper header-content" }, /*#__PURE__*/
       React.createElement("div", { className: "app-title" },
       this.props.isMobile ? /*#__PURE__*/React.createElement("div", { className: "side-menu-button" }, /*#__PURE__*/React.createElement("a", { href: "#", onClick: this.showSideMenu }, /*#__PURE__*/React.createElement("i", { className: "fas fa-bars" }))) : "", /*#__PURE__*/
-      React.createElement("div", { className: "title" }, "LazyFeed")), /*#__PURE__*/
+      React.createElement("div", { className: "title" }, "rowwanph")), /*#__PURE__*/
 
       React.createElement("div", { className: "header-right-side" }, /*#__PURE__*/
       React.createElement("div", { className: "header-info" }, /*#__PURE__*/
@@ -335,6 +335,7 @@ class PostWall extends React.Component {
     this.localList = {};
     this.idCounter = 0;
     this.maxPostCount = 50;
+    this.showOnlyLiked = 0:
 
     this.manualUpdate = this.manualUpdate.bind(this);
     this.updateState = this.updateState.bind(this);

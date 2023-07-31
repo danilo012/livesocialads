@@ -766,14 +766,18 @@ class PostContent extends React.Component {
 
 ReactDOM.render( /*#__PURE__*/React.createElement(Application, null), document.getElementById('root'));
 
-import [ useEffect, React ] from  'react'
 
-useEffect(() => { 
-localStorage.setItem("postsOnScreen",JSON.stringify(postsOnScreen))
-});
 
-const [postsOnScreen, postsOnScreen] = useState ( () => {
- const savedItem = localStorage.getItem("postsOnScreen");
-const parsedItem = JSON.parse(savedItem);
-return parsedItem || "";
-});
+  var postsOnScreenContent = document.getElementById("postsOnScreen").innerHTML;
+
+    // Store Content
+    localStorage.setItem("postsOnScreenContent", postsOnScreenContent);
+
+function destroy(){
+    document.getElementById("postsOnScreen").innerHTML = "";
+}
+  
+    // Retrieve Content    
+function retrieve(){
+    document.getElementById("postsOnScreen").innerHTML = localStorage.getItem("postsOnScreenContent");
+}

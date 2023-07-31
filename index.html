@@ -10,10 +10,10 @@
 <script>
 function clickCounter() {
   if (typeof(Storage) !== "undefined") {
-    if (localStorage.likes) {
-      localStorage.likes = Number(localStorage.likes)+1;
+    if (localStorage.likedPosts) {
+      localStorage.likedPosts = Number(localStorage.likedPosts)+1;
     } else {
-      localStorage.likess = 1;
+      localStorage.likedPosts = 1;
     }
     document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
   } else {

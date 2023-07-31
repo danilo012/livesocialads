@@ -546,41 +546,6 @@ class Controls extends React.Component {
       React.createElement("div", { className: "controls", onChange: this.props.change }, /*#__PURE__*/
       React.createElement("div", { className: "controls-title" }, "Feed controls"), /*#__PURE__*/
 
-      React.createElement("div", { className: "toggle-wrap", title: "Automatically append new posts in your feed" }, /*#__PURE__*/
-      React.createElement("input", { id: "autoUpdate", type: "checkbox", defaultChecked: true }), /*#__PURE__*/
-      React.createElement("label", { htmlFor: "autoUpdate" }, "Autoupdate", /*#__PURE__*/
-
-      React.createElement("div", { className: "toggle" }, /*#__PURE__*/React.createElement("div", { className: "round" })))), /*#__PURE__*/
-
-
-
-      React.createElement("div", { className: "toggle-wrap", title: "Page doesn't jump when you scroll down (more than half screen)" }, /*#__PURE__*/
-      React.createElement("input", { id: "fixedScroll", type: "checkbox", defaultChecked: true }), /*#__PURE__*/
-      React.createElement("label", { htmlFor: "fixedScroll" }, "Fixed scroll", /*#__PURE__*/
-
-      React.createElement("div", { className: "toggle" }, /*#__PURE__*/React.createElement("div", { className: "round" })))), /*#__PURE__*/
-
-
-
-      React.createElement("div", { className: "toggle-wrap", title: "Show only posts that you liked" }, /*#__PURE__*/
-      React.createElement("input", { id: "showOnlyLiked", type: "checkbox" }), /*#__PURE__*/
-      React.createElement("label", { htmlFor: "showOnlyLiked" }, "Show only liked", /*#__PURE__*/
-
-      React.createElement("div", { className: "toggle" }, /*#__PURE__*/React.createElement("div", { className: "round" })))), /*#__PURE__*/
-
-
-
-      
-      
-
-      React.createElement("div", { className: "toggle-wrap", title: "Dont upload new posts" }, /*#__PURE__*/
-      React.createElement("input", { id: "stopUpload", type: "checkbox" }), /*#__PURE__*/
-      React.createElement("label", { htmlFor: "stopUpload" }, "Stop upload", /*#__PURE__*/
-
-      React.createElement("div", { className: "toggle" }, /*#__PURE__*/React.createElement("div", { className: "round" })))), /*#__PURE__*/
-
-
-
       React.createElement("div", { className: "controls-title" }, "App info"), /*#__PURE__*/
       React.createElement("div", { className: "row" }, /*#__PURE__*/
       React.createElement("span", null, "Total posts:"), /*#__PURE__*/

@@ -176,8 +176,8 @@ class Feed extends React.Component {
       stopUpload: false,
 
       postsOnScreen: 0,
-      totalPosts: 0,
-      totalLiked: 0};
+      totalPosts: 0
+    };
 
     this.changeSettings = this.changeSettings.bind(this);
     this.changePostsCount = this.changePostsCount.bind(this);
@@ -594,6 +594,10 @@ class Controls extends React.Component {
       React.createElement("span", null, "On screen:"), /*#__PURE__*/
       React.createElement("span", null, this.props.postsOnScreen)), /*#__PURE__*/
 
+      React.createElement("div", { className: "row" }, /*#__PURE__*/
+      React.createElement("span", null, "Total likes:"), /*#__PURE__*/
+      React.createElement("span", null, this.props.showOnlyLiked)), /*#__PURE__*/
+                          
       React.createElement("div", { className: "row" }, /*#__PURE__*/
       React.createElement("span", null, "Max posts:"), /*#__PURE__*/
       React.createElement("span", null, "50")))));

@@ -10,12 +10,8 @@
      crossorigin="anonymous"></script>
 </head>
 <body>
- <div id="totalPosts"> 0
-  </div>
-
-<button id="del" onclick="destroy()">Destroy div  Content</button>
-<button id="res" onclick="retrieve()">Restore content  from local storage</button>
-<!-- partial:index.partial.html -->
+  <li><div onclick="open_tickets()">Golden coins 🧽: <b id="ticket_num"></b></div></li>
+ <!-- partial:index.partial.html -->
 <div id="root"></div>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/react/16.8.3/umd/react.production.min.js'></script>

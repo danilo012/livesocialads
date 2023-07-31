@@ -177,7 +177,7 @@ class Feed extends React.Component {
 
       postsOnScreen: 0,
       totalPosts: 0,
-      totalLikes: 0};
+      totalLiked: 0};
 
     this.changeSettings = this.changeSettings.bind(this);
     this.changePostsCount = this.changePostsCount.bind(this);

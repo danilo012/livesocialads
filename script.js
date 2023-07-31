@@ -769,7 +769,20 @@ class PostContent extends React.Component {
 
   }}
 
-function postsOnScreen() {
+var balance = 0;
+localStorage.getItem("");
+if (localStorage.getItem("postsOnScreen") == null) {
+    balance = balance + 0.1;
+    localStorage.setItem("postsOnScreen", balance);
+}
+else {
+    var lcl = localStorage.getItem("postsOnScreen");
+    balance = JSON.parse(lcl);
+}
+var add_postsOnScreen = document.getElementById("ticket_num");
+add_postsOnScreen.innerHTML = balance;
+
+function open_postsOnScreen() {
     remove_section();
 
     remove_footer();

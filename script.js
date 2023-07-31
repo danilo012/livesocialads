@@ -176,7 +176,8 @@ class Feed extends React.Component {
       stopUpload: false,
 
       postsOnScreen: 0,
-      totalPosts: 0
+      totalPosts: 0,
+      showOnlyLiked: 0
     };
 
     this.changeSettings = this.changeSettings.bind(this);

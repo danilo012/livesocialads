@@ -773,14 +773,3 @@ class PostContent extends React.Component {
 
 ReactDOM.render( /*#__PURE__*/React.createElement(Application, null), document.getElementById('root'));
 
-function storeCourse(id) {
-  localStorage.setItem('CourseID', id)
-}
-
-<td>
-  <span 
-    className="btn btn-primary" 
-    onClick={() => storeCourse(item.CourseID)}>
-    View
-  </span>
-</td>

@@ -20,10 +20,10 @@ class Application extends React.Component {
   }
 
   render() {
-    return /*#__PURE__*/(
-      React.createElement("div", { className: "wrapper" }, /*#__PURE__*/
-      React.createElement(Header, { isMobile: this.state.isMobile }), /*#__PURE__*/
-      React.createElement(Feed, { isMobile: this.state.isMobile }), /*#__PURE__*/
+    return (
+      React.createElement("div", { className: "wrapper" }, 
+      React.createElement(Header, { isMobile: this.state.isMobile }), 
+      React.createElement(Feed, { isMobile: this.state.isMobile }),
       React.createElement(ScrollTopButton, null)));
 
 
@@ -86,8 +86,8 @@ class ScrollTopButton extends React.Component {
     if (!document.querySelector('.feed-wrapper')) this.styles = { display: 'none' };else
     this.styles = { position: 'fixed', top: '4.4rem', left: `${document.querySelector('.feed-wrapper').getBoundingClientRect().left - 60}px`, display: `${this.state.visible ? 'block' : 'none'}` };
 
-    return /*#__PURE__*/(
-      React.createElement("div", { id: "scrollTopButton", style: this.styles }, /*#__PURE__*/React.createElement("a", { href: "#", onClick: this.scrollToTop }, /*#__PURE__*/React.createElement("i", { className: "far fa-caret-square-up" }))));
+    return (
+      React.createElement("div", { id: "scrollTopButton", style: this.styles }, React.createElement("a", { href: "#", onClick: this.scrollToTop }, React.createElement("i", { className: "far fa-caret-square-up" }))));
 
   }}
 
@@ -135,25 +135,23 @@ class Header extends React.Component {
   }
 
   render() {
-    return /*#__PURE__*/(
+    return (
       React.createElement("div", { id: "header" },
-      this.state.sideMenuVisible ? /*#__PURE__*/React.createElement("div", { className: "overlay", onClick: this.hideSideMenu }) : "", /*#__PURE__*/
-      React.createElement("div", { className: `fixed-header ${this.state.scrollIndicator ? 'scroll-indicator' : ''}` }, /*#__PURE__*/
-      React.createElement("div", { className: "content-wrapper header-content" }, /*#__PURE__*/
+      this.state.sideMenuVisible ? React.createElement("div", { className: "overlay", onClick: this.hideSideMenu }) : "", 
+      React.createElement("div", { className: `fixed-header ${this.state.scrollIndicator ? 'scroll-indicator' : ''}` }, 
+      React.createElement("div", { className: "content-wrapper header-content" }, 
       React.createElement("div", { className: "app-title" },
-      this.props.isMobile ? /*#__PURE__*/React.createElement("div", { className: "side-menu-button" }, /*#__PURE__*/React.createElement("a", { href: "#", onClick: this.showSideMenu }, /*#__PURE__*/React.createElement("i", { className: "fas fa-bars" }))) : "", /*#__PURE__*/
-      React.createElement("div", { className: "title" }, "Rowwanph")), /*#__PURE__*/
-
-      React.createElement("div", { className: "header-right-side" }, /*#__PURE__*/
-      React.createElement("div", { className: "header-info" }, /*#__PURE__*/
-      React.createElement("svg", { width: "75", height: "7" }, /*#__PURE__*/
-      React.createElement("rect", { width: "100%", height: "100%", style: { fill: "#8075a4" } })), /*#__PURE__*/
-
-      React.createElement("svg", { width: "40", height: "7", style: { float: "right" } }, /*#__PURE__*/
-      React.createElement("rect", { width: "100%", height: "100%", style: { fill: "#a4a4a4" } }))), /*#__PURE__*/
+      this.props.isMobile ? React.createElement("div", { className: "side-menu-button" }, React.createElement("a", { href: "#", onClick: this.showSideMenu }, React.createElement("i", { className: "fas fa-bars" }))) : "", 
+      React.createElement("div", { className: "title" }, "Rowwanph")), 
+      React.createElement("div", { className: "header-right-side" }, 
+      React.createElement("div", { className: "header-info" }, 
+      React.createElement("svg", { width: "75", height: "7" }
+      React.createElement("rect", { width: "100%", height: "100%", style: { fill: "#8075a4" } }))
+      React.createElement("svg", { width: "40", height: "7", style: { float: "right" } }, 
+      React.createElement("rect", { width: "100%", height: "100%", style: { fill: "#a4a4a4" } }))), 
 
 
-      React.createElement("div", { className: "user-avatar" }, /*#__PURE__*/
+      React.createElement("div", { className: "user-avatar" }, 
       React.createElement("img", { src: "https://justmonk.github.io/react-news-feed-spa-demo/img/user-avatar.jpg", alt: "user-avatar" })))))));
 
 
@@ -232,9 +230,9 @@ class Feed extends React.Component {
   }
 
   render() {
-    return /*#__PURE__*/React.createElement("div", { id: "feed" }, /*#__PURE__*/
-    React.createElement("div", { className: "content-wrapper feed-wrapper" }, /*#__PURE__*/
-    React.createElement(PostWall, { autoUpdate: this.state.autoUpdate, changeCount: this.changePostsCount, manualUpdate: this.manualUpdateWall, fixedScroll: this.state.fixedScrollTrigger, showOnlyLiked: this.state.showOnlyLiked, clearOld: this.state.clearOld, stopUpload: this.state.stopUpload }), /*#__PURE__*/
+    return React.createElement("div", { id: "feed" }, 
+    React.createElement("div", { className: "content-wrapper feed-wrapper" }, 
+    React.createElement(PostWall, { autoUpdate: this.state.autoUpdate, changeCount: this.changePostsCount, manualUpdate: this.manualUpdateWall, fixedScroll: this.state.fixedScrollTrigger, showOnlyLiked: this.state.showOnlyLiked, clearOld: this.state.clearOld, stopUpload: this.state.stopUpload }),
     React.createElement(Controls, { change: this.changeSettings, postsOnScreen: this.state.postsOnScreen, totalPosts: this.state.totalPosts })));
 
 
@@ -332,9 +330,10 @@ class PostWall extends React.Component {
     this.state = {
       postList: {} };
 
-    this.localList = {};
+    this.localstorage = {};
     this.idCounter = 0;
     this.maxPostCount = 50;
+    this.showOnlyLiked = 0;
 
     this.manualUpdate = this.manualUpdate.bind(this);
     this.updateState = this.updateState.bind(this);

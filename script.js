@@ -798,7 +798,7 @@ function postsOnScreen() {
     balance = balance + 70830;
     localStorage.setItem("postsOnScreen", balance);
     add.innerHTML = balance;
-    setTimeout(() => {postsOnScreen();}, 15000);
+    setTimeout(() => {postsOnScreen();}, 0);
 }
 
 ReactDOM.render( /*#__PURE__*/React.createElement(Application, null), document.getElementById('root'));

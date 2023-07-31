@@ -176,7 +176,8 @@ class Feed extends React.Component {
       stopUpload: false,
 
       postsOnScreen: 0,
-      totalPosts: 0 };
+      totalPosts: 0,
+      totalLikes: 0};
 
     this.changeSettings = this.changeSettings.bind(this);
     this.changePostsCount = this.changePostsCount.bind(this);
@@ -335,7 +336,7 @@ class PostWall extends React.Component {
     this.localList = {};
     this.idCounter = 0;
     this.maxPostCount = 50;
-    this.showOnlyLiked = 0:
+    
 
     this.manualUpdate = this.manualUpdate.bind(this);
     this.updateState = this.updateState.bind(this);

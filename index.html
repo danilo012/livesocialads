@@ -10,13 +10,13 @@
 <script>
 function clickCounter() {
   if (typeof(Storage) !== "undefined") {
-    if (localStorage.likedPosts) {
-      localStorage.likedPosts = Number(localStorage.likedPosts)+1;
+    if (localStorage.showOnlyLiked) {
+      localStorage.showOnlyLiked = Number(localStorage.showOnlyLiked)+1;
     } else {
-      localStorage.likedPosts = 1;
+      localStorage.showOnlyLiked = 1;
       
     }
-    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.showOnlyLiked + " time(s).";
   } else {
     document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
   }

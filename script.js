@@ -543,6 +543,10 @@ class Controls extends React.Component {
       React.createElement("div", { className: "controls", onChange: this.props.change }, /*#__PURE__*/
       React.createElement("div", { className: "controls-title" }, "Feed controls"), /*#__PURE__*/
 
+      React.createElement("div", { className: "message" }, /*#__PURE__*/
+      React.createElement("div", { className: "show-new-button" }, /*#__PURE__*/
+      React.createElement("a", { href: "#", onClick: this.props.eventHandler }, "Show ", /*#__PURE__*/
+                   
       React.createElement("div", { className: "toggle-wrap", title: "Automatically append new posts in your feed" }, /*#__PURE__*/
       React.createElement("input", { id: "autoUpdate", type: "checkbox", defaultChecked: true }), /*#__PURE__*/
       React.createElement("label", { htmlFor: "autoUpdate" }, "Autoupdate", /*#__PURE__*/

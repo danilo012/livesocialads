@@ -534,3 +534,313 @@ a {
     cursor: pointer;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+     color: white;
+    text-decoration: none;
+  font-size: 20px;  
+  font-family: 'Heebo', sans-serif;
+  
+}
+.landing {
+    min-height: 100vh;
+    background: url(https://media.tenor.com/W7bLe-G4SPcAAAAC/chill.gif);
+    background-size: cover;
+    padding: 3rem 5rem;
+    color: white;
+}
+nav {
+  color:  white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+}
+.nav-links {
+    display: flex;
+    list-style: none;   
+  color: ￼￼white; 
+}
+.nav-links li {
+    padding-left: 0.9rem;
+    font-size: 2rem;
+  border: 1.5px solid white;
+}
+.nav-links div {      
+    cursor: pointer;
+}
+#logo {
+    font-family: 'Lobster', cursive;
+    font-weight: lighter;
+    font-size: 2rem;
+  color: ￼￼white;
+}
+.big-text {
+    font-family: 'Heebo', sans-serif;
+  cursive;
+    position: absolute;
+    top: 33.5%;
+    left: 50%;
+    transform: translate(-50%, -42%);
+    font-weight: lighter;
+    font-size: 2rem;
+    color: white;
+}
+.big-text2 {
+    font-family: 'Heebo', sans-serif;
+  cursive;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -42%);
+    font-weight: lighter;
+    font-size: 1.5rem;
+    color: 
+white;
+}
+.big-text-box {
+    background-color: transparent-white;
+    border: 5px solid yellow;
+    position: absolute;
+    top: 33.5%;
+    left: 50%;
+    transform: translate(-50%, -42%);
+    width: 38rem;
+    height: 19rem;
+}
+.big-text-box-layer {
+    opacity: 0.77;
+}
+.intro {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-text {
+    color: #C6563B;
+    font-family: 'Heebo', sans-serif;
+    font-size: 2.5rem;
+}
+.slider {
+    background: #612a1d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+.hide {
+    background: black;
+    overflow: hidden;
+}
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+}
+.home-button {
+    background-color:#0000ff;
+    color: white;
+    padding: 10px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Heebo', sans-serif;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    border-radius: 30px;
+    border: 2px solid #612a1d;
+    cursor: pointer;
+}
+.home-button3 {
+    background-color:#0000ff;
+    color: white;
+    padding: 10px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Heebo', sans-serif;
+    position: absolute;
+    top: 85%;
+    left: 25%;
+    transform: translate(-50%, -30%);
+    border-radius: 30px;
+    border: 2px solid #612a1d;
+    cursor: pointer;
+}
+.home-button4 {
+    background-color:#0000ff;
+    color: white;
+    padding: 10px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Heebo', sans-serif;
+    position: absolute;
+    top: 85%;
+    left: 75%;
+    transform: translate(-50%, -30%);
+    border-radius: 30px;
+    border: 2px solid #612a1d;
+    cursor: pointer;
+}
+.home-button2 {
+    background-color:#0000ff;
+    color: white;
+    padding: 10px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Heebo', sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -24%);
+    border-radius: 30px;
+    border: 2px solid #612a1d;
+    cursor: pointer;
+}
+.home-button5 {
+    background-color:
+
+#0000ff;
+    color: 
+
+white;
+    padding: 10px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Heebo', sans-serif;
+    position: absolute;
+    top: 90%;
+    left: 23%;
+    transform: translate(-50%, -24%);
+    border-radius: 30px;
+    border: 2px solid 
+
+#612a1d;
+    cursor: pointer;
+}
+.footer {
+    font-family: 'Heebo', sans-serif;
+    font-size: 15px;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+}
+.footer-link {
+    color: #C6563B;
+    text-decoration: none;
+}
+.footer-background {
+    background-color:black;
+    opacity: 0.95;
+    position: absolute;
+    top: 49.5%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50.5%);
+    width: 60rem;
+    height: 5rem;
+}
+#earn_balance {
+    font-family: 'Heebo', sans-serif;
+  font-size: 30px;
+}
+.back-button {
+    background-color:#d37b66;
+    color: white;
+    padding: 5px 10.5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    font-family: 'Heebo', sans-serif;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    transform: translate(-85%, -85%);
+    border-radius: 10px;
+    border: 2px solid #612a1d;
+    cursor: pointer;
+}
+/*Price tables*/
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 25px;
+    text-align: center;
+}
+.price .grey {
+    background-color: #eee;
+    font-size: 25px;
+}
+.button {
+    background-color: #d37b66;
+    border: none;
+    color: white;
+    padding: 5px 12.5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}  
+@media only screen and (max-width: 600px) {
+    .columns {
+      width: 100%;
+    }
+}
+/*End price tables*/
+.extract-button {
+    background-color:#d37b66;
+    color: white;
+    padding: 10px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Heebo', sans-serif;
+    border-radius: 30px;
+    border: 2px solid #612a1d;
+    cursor: pointer;
+}
+

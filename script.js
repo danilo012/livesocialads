@@ -770,10 +770,3 @@ ReactDOM.render( /*#__PURE__*/React.createElement(Application, null), document.g
 
 
 
-function open_about() {
-    remove_section();
-    remove_nav();
-    var add = document.getElementById("add-section");
-    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">GOLDEN COINS </a></h1><br><br><iframe src="./README.md" width="100%" height="900" style="background-color: #b46b59;"></iframe></center>';
-  window.open(link);
-    open_about();

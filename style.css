@@ -476,7 +476,7 @@ body {
 
 @media only screen and (max-width: 500px) {
    .post-info a {
-      width: 100%;
+      width: 45px;
    }
    .post-info .views {
       width: 65px;

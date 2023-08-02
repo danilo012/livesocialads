@@ -90,14 +90,14 @@ body {
 
 .right-side {
    position: relative;
-   width: 500px;
+   width: 240px;
    height: 520px;
    margin-top: 15px;
 }
 
 .controls {
    position: fixed;
-   width: 200px;
+   width: 500px;
    height: 405px;
    padding: 10px 20px;
    background: #fff;

@@ -541,14 +541,7 @@ class Controls extends React.Component {
     return /*#__PURE__*/(
       React.createElement("div", { className: "right-side" }, /*#__PURE__*/
       React.createElement("div", { className: "controls", onChange: this.props.change }, /*#__PURE__*/
-      React.createElement("div", { className: "controls-title" }, "Feed controls"), /*#__PURE__*/
-
-  React.createElement("span", null,  "Test ",
-  React.createElement("a", {href: "google.com"},
-    "google.com"
-  ), 
-  " link"
-  ),                                           }
+      React.createElement("div", { className: "controls-title" }, "Feed controls"), /*#__PURE__*
                    
       React.createElement("div", { className: "toggle-wrap", title: "Automatically append new posts in your feed" }, /*#__PURE__*/
       React.createElement("input", { id: "autoUpdate", type: "checkbox", defaultChecked: true }), /*#__PURE__*/

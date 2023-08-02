@@ -493,7 +493,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 10vh;
+    min-height: 5vh;
 }
 .nav-links {
     display: flex;

@@ -498,7 +498,7 @@ nav {
 .nav-links {
     display: flex;
     list-style: none;   
-  color: black; 
+  color: blue; 
 }
 .nav-links li {
     padding-left: 0.3rem;
@@ -512,7 +512,7 @@ nav {
 a {
      color: blue;
     text-decoration: none;
-  font-size: 20px;  
+  font-size: 18px;  
   font-family: 'Heebo', sans-serif;
   
    }

@@ -489,7 +489,7 @@ main {
 }
 
 nav {
-  color:  white;
+  color:  black;
     display: flex;
     align-items: right;
     justify-content: space-between;

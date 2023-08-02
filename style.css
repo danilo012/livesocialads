@@ -194,7 +194,7 @@ body {
 }
 
 .post-content {
-   width: 700px;
+   width: 600px;
    max-height: 700px;
    overflow: hidden;
    min-height: 454px;
@@ -219,7 +219,7 @@ body {
    padding: 5px 0;
    text-align: center;
    padding: 5px 0;
-   width: 140px;
+   width: 540px;
 }
 
 .post-info .views .icon {

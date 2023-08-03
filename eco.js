@@ -29,3 +29,5 @@
     });
   }); 
 })(jQuery);
+
+const element = document.getElementById("intro");
